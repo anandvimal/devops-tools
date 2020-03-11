@@ -1,0 +1,52 @@
+#new syntax to run a container
+docker container run hello-world
+
+#to check version
+docker version
+
+#help - for any command: docker comand --help
+docker container run --help
+
+#docker image pull (for images you plan to run you can pre-pull)
+docker image pull hello-world
+
+#list container command (only running containers)
+docker container ls
+
+#list all containers (running or stopped)
+docker container ls -all
+
+#remove container after its finished running:
+docker container run --rm hello-world
+
+#remove a existing stopped/exited container:
+docker container rm container-id
+docker container rm container-name
+
+#giving your names to containers eg (name give lola in below example):
+docker container run --name lola hello-world
+
+#removing more than 1 container at once
+docker container rm container1-id container2-id
+docker container rm container1-name container2-name
+
+#removing even if a container is running (use rm --force)
+docker container rm --force web-server
+
+#to list only docker id's use: --quiet
+docker container ls --all --quiet
+
+removing all container at once:
+docker container rm --force $(docker container ls --all --quiet)
+
+
+
+
+
+
+
+
+
+
+
+#
