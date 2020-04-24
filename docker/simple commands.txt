@@ -1,6 +1,10 @@
 #new syntax to run a container
 docker container run hello-world
 
+#run a container and log in within its shell.
+#-it stands for i-interactive -t terminal
+sudo docker container run -it alpine:3.4 sh
+
 #to check version
 docker version
 
