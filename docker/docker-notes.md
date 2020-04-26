@@ -94,6 +94,9 @@ Display the running processes of a container
 exec will run a command in a running container
 `docker container exec -d ubuntu_bash touch /tmp/execWorks`
 
+you can use exec to get into a container also running in background  
+`docker container exec -it CONTAINER_NAME sh`
+
 ## Attaching and Detaching
 
 attaching to the container allows you to interact with primary process launched with container eg. python flask voiting app.
@@ -105,8 +108,10 @@ to detach `^p ^p`
 
 `docker container inspect CONTAINER_NAME`
 
-## container stats (cpu memory etc)
-`docker container stats`
-`docker container stats --no-steam=true`
+## Container Stats (cpu memory etc)
+`docker container stats`  
+`docker container stats --no-steam=true`  
+
+
 
 --
