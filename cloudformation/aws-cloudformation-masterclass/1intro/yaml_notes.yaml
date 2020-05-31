@@ -36,3 +36,6 @@ lines: |
   Suite @292
 
 #Can include comment's (lol) 
+
+#empty objects in yaml is : {}
+Properties: {}
