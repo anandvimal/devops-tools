@@ -1,0 +1,38 @@
+#YAML Notes
+
+#yaml has key value pairs
+key : value
+
+#we have nested objects 
+#bill to is a key and everything else is a object. 
+#address is also an object.
+bill-to:
+  given: Chris
+  family: dumars
+  address: 
+    lines: |
+      458 walkman Dr. 
+      Suite @292
+    city: Royal Oak
+    state: MI 
+    postal: 48046
+
+#support arrays
+#product is a support array.
+# each element of array starts with - 
+product:
+  - sku: BL394D
+    quantity: 4
+    description: Basketball
+    price: 450.00
+  - sku: BL4438H
+    quantity: 1
+    description: super hoop
+    price: 2392.00
+
+#multi line strings:
+lines: |
+  458 walkman Dr. 
+  Suite @292
+
+#Can include comment's (lol) 
